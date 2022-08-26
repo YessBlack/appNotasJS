@@ -1,0 +1,22 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+    --colorPrimary: #F59923;
+    --colorBGPrimary: #3D0963;
+    --colorTextPrimary: #fff;
+    --colorTextSecondary:#000;
+    --colorBG1:#5F0A75;
+    --colorBG2:#870B85;
+    --colorBG3:#9A0C78;
+    --colorBG4:#AC0C63;
+
+    --fontFamilyTitle:font-family: 'Fredoka One', cursive;
+    --fontFamilyText:font-family: 'Patrick Hand', cursive;
+}
+
+body {
+    font-family: var(--fontFamilyText);
+}
