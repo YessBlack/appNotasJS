@@ -25,9 +25,13 @@ body {
     align-items: flex-start;
     justify-content: center;
     padding: 3rem;
+    max-width: 375px;
 }
 p {
     color: var(--colorTextPrimary);
+}
+.app {
+    width: 100%;
 }
 .title {
     font-family:var(--fontFamilyTitle);
@@ -40,4 +44,26 @@ p {
     margin-top: .5rem;
     font-size: 20px;
     font-weight: bold;
+}
+.form {
+    width: 100%;
+    margin-top: 2rem;   
+    display: flex; 
+}
+.input-task {
+    padding: .7rem;
+    border-radius:  50px 0px 0px 50px;
+    border:none;
+    outline: none;
+    width: 100%;
+}
+.btn-add-task {
+    border: none;
+    border-radius: 0px 50px 50px 0px;
+    padding: .2rem;
+    background-color: var(--colorPrimary);
+    width: 20%;
+}
+ion-icon[name="add-circle-outline"] {
+    font-size: 1.5rem;
 }
