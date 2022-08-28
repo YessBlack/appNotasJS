@@ -7,8 +7,7 @@ export const inputEmpty = ($app,$header) => {
                                 </div>
                             `
     $app.insertBefore(alertInputEmpty,$header)
-    const close = document.getElementById('close')
-    close.addEventListener('click', e => {
+    setInterval(() => {
         $app.removeChild(alertInputEmpty)
-    })                       
+    },3000)      
 }

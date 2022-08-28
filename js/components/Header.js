@@ -5,8 +5,8 @@ $header.classList.add('header')
 let nombre = 'Angelica Garcia'
 
 const diaSemana = (dia) => {
-    const arr = ['Lunes','Martes','Miercoles','Jueves','Viernes','Sabado','Domingo']
-    return arr[dia-1]
+    const arr = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado']
+    return arr[dia]
 }
 const nombreMes = (mes) => {
     const arr = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
@@ -17,5 +17,4 @@ $header.innerHTML = `
                         <p class='date'>${diaSemana(new Date().getDay())}, ${new Date().getDate()} de ${nombreMes(new Date().getMonth())}</p>
                         <p class='name'>Hola, ${nombre}</p>
                     `
-
 export default $header
