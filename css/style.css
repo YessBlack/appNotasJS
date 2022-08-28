@@ -12,6 +12,7 @@
     --colorBG2:#870B85;
     --colorBG3:#9A0C78;
     --colorBG4:#AC0C63;
+    --colorRemove:#ff8592;
 
     --fontFamilyTitle: 'Fredoka One', cursive;
     --fontFamilyText: 'Patrick Hand', cursive;
@@ -66,4 +67,32 @@ p {
 }
 ion-icon[name="add-circle-outline"] {
     font-size: 1.5rem;
+}
+.container-task {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+}
+.text-task {
+    padding-left: 1rem;
+    width: 85%;
+    text-align: center;
+}
+ion-icon[name="close-circle-outline"] {
+    color: var(--colorRemove);
+}
+.bg-1 {
+    background-color: var(--colorBG1);
+}
+.bg-2 {
+    background-color: var(--colorBG2);
+}
+.bg-3 {
+    background-color: var(--colorBG3);
+}
+.bg-4 {
+    background-color: var(--colorBG4);
 }
