@@ -23,7 +23,7 @@ body {
     background-color: var(--colorBGPrimary); 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 3rem;
     max-width: 375px;
@@ -95,4 +95,8 @@ ion-icon[name="close-circle-outline"] {
 }
 .bg-4 {
     background-color: var(--colorBG4);
+}
+.ready {
+    text-decoration:line-through;
+    color: rgb(170, 255, 170);
 }
