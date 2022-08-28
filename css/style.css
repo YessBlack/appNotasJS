@@ -13,6 +13,8 @@
     --colorBG3:#9A0C78;
     --colorBG4:#AC0C63;
     --colorRemove:#ff8592;
+    --colorAlert:rgba(252, 99, 99, 0.322);
+    --colorBGOpacity:rgba(211, 206, 206, 0.11);
 
     --fontFamilyTitle: 'Fredoka One', cursive;
     --fontFamilyText: 'Patrick Hand', cursive;
@@ -26,13 +28,12 @@ body {
     align-items: center;
     justify-content: center;
     padding: 3rem;
-    max-width: 375px;
 }
 p {
     color: var(--colorTextPrimary);
 }
 .app {
-    width: 100%;
+    
 }
 .title {
     font-family:var(--fontFamilyTitle);
@@ -99,4 +100,43 @@ ion-icon[name="close-circle-outline"] {
 .ready {
     text-decoration:line-through;
     color: rgb(170, 255, 170);
+}
+.modal-input-empty {
+    overflow: hidden;
+    position: sticky;
+    margin-bottom: 1rem;
+    background-color: var(--colorAlert);
+    padding: 1rem;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ion-icon[name="close-outline"] {
+    color: var(--colorTextPrimary);
+}
+@media (min-width: 768px) {
+    .app {
+        background-color: var(--colorBGOpacity);
+        padding: 2rem;
+        max-width: 400px;
+        height: 90vh;
+        width: 100%;
+        border-radius: 20px;
+        overflow: scroll;
+    }
+}
+
+@media (min-width: 1024px) {
+    .app {
+        padding: 3rem;
+        max-width: 450px;
+        height: 90vh;
+        background-color: var(--colorBGOpacity);
+        width: 100%;
+        border-radius: 20px;
+        overflow: scroll;
+    }
 }
