@@ -1,18 +1,16 @@
-export const remove = (el,$app) => {
-    el.addEventListener('click', e => {
-        e.stopImmediatePropagation()
+export const remove = (el) => {
+    el.addEventListener('click', () => {
         const taskContainer = el.closest('.container-task')
         if (taskContainer) {
-            $app.removeChild(taskContainer)
+            taskContainer.remove()
         }
     })
 }
 
 export const ready = (el) => {
-    el.addEventListener('click', e => {
-        e.stopImmediatePropagation()
-        if (e.target.nextElementSibling) {
-            e.target.nextElementSibling.classList.toggle("ready")
+    el.addEventListener('click', () => {
+        if (el.nextElementSibling) {
+            el.nextElementSibling.classList.toggle("ready")
         }
     })
 }

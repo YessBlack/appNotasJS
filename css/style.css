@@ -82,8 +82,21 @@ ion-icon[name="add-circle-outline"] {
     width: 85%;
     text-align: center;
 }
+.remove {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 ion-icon[name="close-circle-outline"] {
     color: var(--colorRemove);
+    font-size: 1.5rem;
+}
+.check {
+    cursor: pointer;
 }
 .bg-1 {
     background-color: var(--colorBG1);

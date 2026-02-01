@@ -25,7 +25,7 @@ export const taskAdd = (btnAdd,$app) => {
             const removeBtn = newTask.querySelector('.remove')
 
             ready(checkBtn)
-            remove(removeBtn,$app)
+            remove(removeBtn)
 
             taskInput.value = ''
         }
