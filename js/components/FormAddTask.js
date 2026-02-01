@@ -13,15 +13,21 @@ export const taskAdd = (btnAdd,$app) => {
     const $header = document.querySelector('.header')
     btnAdd.addEventListener('click', e => {
         e.preventDefault()
-        const task = document.querySelector('.input-task').value
+        const taskInput = document.querySelector('.input-task')
+        const task = taskInput.value
         if(task === '' || task === ' '){
             inputEmpty($app,$header)
         }else {
-            $app.appendChild(Task(task))
-            const taskList = document.querySelectorAll('.check')
-            const btnRemoveList = document.querySelectorAll('.remove')
-            ready(taskList)
-            remove(btnRemoveList,$app)
+            const newTask = Task(task)
+            $app.appendChild(newTask)
+
+            const checkBtn = newTask.querySelector('.check')
+            const removeBtn = newTask.querySelector('.remove')
+
+            ready(checkBtn)
+            remove(removeBtn,$app)
+
+            taskInput.value = ''
         }
     })   
 }

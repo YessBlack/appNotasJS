@@ -7,7 +7,9 @@ export const inputEmpty = ($app,$header) => {
                                 </div>
                             `
     $app.insertBefore(alertInputEmpty,$header)
-    setInterval(() => {
-        $app.removeChild(alertInputEmpty)
+    setTimeout(() => {
+        if ($app.contains(alertInputEmpty)) {
+            $app.removeChild(alertInputEmpty)
+        }
     },3000)      
 }
